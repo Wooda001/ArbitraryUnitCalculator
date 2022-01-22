@@ -1,1 +1,4 @@
-Test Note
+User Stories
+1. User provides a String Input for name of the unit
+2. User selects the Base (IN, FT) and value for the unit. I.E: 1 Banana = 8.4 Inches
+3. Calculates Miles, Objects, Info, etc based on that unit. I.E: The Empire state building is 17,845 Bananas tall. 1 Mile is 1,782,020 Bananas. 
