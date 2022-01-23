@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<div>
+    <!--
+    <h1> 1 Mile </h1>
+    <h1> is equal to </h1>
+     -->
+    <h1 th:text="'1 Mile is equal to ' + ${newValue} + ' ' +  ${originalUnit} + 's'"> RESULTS </h1>
+    <!--
+    <h1 th:text="${originalUnit} + s"> UNIT </h1>
+    -->
+</div>
+</body>
+</html>
