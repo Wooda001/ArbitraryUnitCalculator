@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Entry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+
+        }
+        body{
+
+            font-family:'Roboto',sans-serif;
+            background-color: #0D0221;
+            font-weight: 300;
+            color: #FBFFFE;
+        }
+        form{
+            background-color: #343135;
+            padding: 30px 30px;
+            border-radius: 20px;
+        }
+        input{
+            margin: 10px;
+        }
+        #submit{
+            display:inline-block;
+            background: #0D0221;
+            padding:0.35em 1.2em;
+            border:0.1em solid #FBFFFE;
+            margin:0 0.3em 0.3em 0;
+            border-radius: 0.12em;
+            box-sizing: border-box;
+            text-decoration:none;
+            text-transform:uppercase;
+            font-family:'Roboto',sans-serif;
+            font-weight:300;
+            color:#FBFFFE;
+            text-align:center;
+            transition: all 0.2s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding: 15px 60px;
+        }
+        #submit:hover{
+            color:#0D0221;
+            background: #FBFFFE;
+            border-color:#FBFFFE;
+        }
+        h1{
+            text-align: center;
+            margin-top: 7%;
+            font-family: 'Comfortaa', cursive;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<script> history.pushState('', '', '/')</script>
+<h1> Arbitrary Unit Calulator</h1>
+    <div class="flex-container">
+
+    <form action="http://localhost:8080/result">
+        <div>
+            <label>NEW UNIT NAME </label>
+            <input type="text" name="originalUnit"/>
+        </div>
+        <div>
+            <label>LENGTH </label>
+            <input type="number" name="length" value="0.00" step="0.25"/>
+            <input type="radio" name="normalUnit" value="in" checked> INCHES
+            <input type="radio" name="normalUnit" value="cm"> CENTIMETERS
+        </div>
+        <div id="subDiv">
+            <input id="submit" type="submit" value="CALCULATE" />
+        </div>
+    </form>
+    </div>
+</body>
+</html>
